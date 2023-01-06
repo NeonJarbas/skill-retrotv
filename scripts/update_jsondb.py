@@ -7,7 +7,6 @@ from youtube_archivist import YoutubeMonitor
 
 archive = YoutubeMonitor(db_name="RetroTV",
                                       min_duration=30 * 60,
-                                      logger=LOG,
                                       blacklisted_kwords=["trailer", "teaser", "movie scene",
                                                           "movie clip", "behind the scenes",
                                                           "Movie Preview", "soundtrack", " OST", "opening theme"])
