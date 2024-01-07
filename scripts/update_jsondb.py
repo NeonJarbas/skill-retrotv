@@ -4,12 +4,11 @@ from os.path import dirname, isfile
 
 from youtube_archivist import YoutubeMonitor
 
-
 archive = YoutubeMonitor(db_name="RetroTV",
-                                      min_duration=30 * 60,
-                                      blacklisted_kwords=["trailer", "teaser", "movie scene",
-                                                          "movie clip", "behind the scenes",
-                                                          "Movie Preview", "soundtrack", " OST", "opening theme"])
+                         min_duration=30 * 60,
+                         blacklisted_kwords=["trailer", "teaser", "movie scene",
+                                             "movie clip", "behind the scenes",
+                                             "Movie Preview", "soundtrack", " OST", "opening theme"])
 
 # load previous cache
 cache_file = f"{dirname(dirname(__file__))}/bootstrap.json"
