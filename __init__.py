@@ -12,7 +12,7 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class RetroTVSkill(OVOSCommonPlaybackSkill):
     def __init__(self, *args, **kwargs):
         self.supported_media = [MediaType.MOVIE]
-        self.skill_icon = self.default_bg = join(dirname(__file__), "ui", "retrotv_icon.jpg")
+        self.skill_icon = self.default_bg = join(dirname(__file__), "res", "retrotv_icon.jpg")
         self.archive = JsonStorageXDG("RetroTV", subfolder="OCP")
         super().__init__(*args, **kwargs)
 
